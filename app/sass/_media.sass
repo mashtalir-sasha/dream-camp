@@ -5,18 +5,23 @@
 
 //Medium: ≥768px
 +media-breakpoint-down(md)
-	.dev
-		float: none
-		margin: 20px auto
+	.first-list__item
+		margin: 0
 //Small: ≥576px
 +media-breakpoint-down(sm)
+	.first
+		&-list
+			&__item
+				min-height: 180px
+				max-width: 230px
 	.main
 		&__ttl
 			font-size: 22px
 		&__subttl
 			font-size: 16px
 		&-list
-			padding: 0 20px
+			&__li
+				margin: 0
 	.foot
 		&__addr
 			margin-bottom: 20px
@@ -26,6 +31,9 @@
 		&-soc
 			display: table
 			margin: 0 auto
+	.dev
+		float: none
+		margin: 0 auto
 
 //Extra small: >0
 +media-breakpoint-down(xs)
@@ -35,33 +43,22 @@
 			border-left: none
 			text-align: center
 			margin-top: 10px
-	.main
-		.container
-			padding: 40px 10px
-		&__btn
-			padding: 8px 60px
+	.first
+		&-ttl
+			font-size: 30px
+			margin-top: 40px
 			span
-				max-width: 160px
-		&__subttl
-			background-color: transparent
-			color: #000
-		&__ttl
-			span
-				color: #fff
-				background-color: #000
-				display: inline-block
-				padding: 2px 8px
+				font-size: 20px
 		&-list
-			&__li
+			&__item
 				float: none
-				width: 100%
-				padding-left: 50px
-				&.last
-					margin-bottom: 20px
-				i
-					width: 40px
-					height: 40px
-					line-height: 40px
+				margin: 0 auto
+	.main
+		&__btn
+			font-size: 18px
+			padding: 8px 55px 8px 60px
+			&:before
+				right: 15px
 	.foot
 		&__addr
 			text-align: center
@@ -71,4 +68,6 @@
 		&__phone
 			padding-left: 0
 			background-image: none
+		&-soc
+			margin-bottom: 20px
 
