@@ -15,7 +15,7 @@
 		$message .= ""
 			. ( $fio ?" Имя:  $fio <br>" : "")
 			. ( $phonenum ?" Телефон:  $phonenum <br><br>" : "")
-			. ( $step1  ? " Сколько Вам/ребенку лет?: $step1 <br>" : "")
+			. ( $step1  ? " Сколько ребенку лет??: $step1 <br>" : "")
 			. ( $step2  ? " Ваш ребенок ранее занимался танцами?: $step2 <br>" : "")
 			. ( $step3  ? " Куда бы Вы хотели отправить ребенка на отдых?: $step3 <br>" : "")
 			. ( $step4  ? " Какой бюджет на отдых ребенка Вам больше подойдет?: $step4 <br>" : "");
@@ -23,10 +23,10 @@
 
 	$headers = "MIME-Version: 1.0\r\n";
 	$headers .= "Content-type: text/html; charset=UTF-8\r\n";
-	$headers .= "From: no-reply@site.com"; // Заменить домен на домен клиента
+	$headers .= "From: no-reply@dance-school.kiev.ua.com"; // Заменить домен на домен клиента
 
 	if (!$title && !$phonenum) {
 	} else {
-		mail($to,"New lead(site)",$message,$headers); // Заменить домен на домен клиента
+		mail($to,"New lead(summer.dance-school.kiev.ua)",$message,$headers); // Заменить домен на домен клиента
 	}
 ?>
