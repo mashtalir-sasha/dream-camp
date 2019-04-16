@@ -158,6 +158,7 @@ $(document).ready(function() {
 						$('.progress-line').slideUp(300);
 						//gtag('event','submit',{'event_category':'submit','event_action':'quiz'});
 						//fbq('track', 'Lead');
+						window.open('https://dance-school.kiev.ua/tantsiuvalnyj-tabir-u-karpatakh/', '_blank');
 					}
 				});
 			}
