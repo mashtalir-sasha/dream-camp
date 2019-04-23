@@ -8,7 +8,7 @@
 	if(isset ($_POST['step3'])) {$step3=$_POST['step3'];}
 	if(isset ($_POST['step4'])) {$step4=$_POST['step4'];}
 
-	$to = "sunnydreamfest@gmail.com"; // Замениь на емаил клиента
+	$to = "sunnydreamfest@gmail.com, leads@ms-digital.top"; // Замениь на емаил клиента
 
 	$message = "Форма: $title <br><br>";
 	if ( $fio || $phonenum || $step1 || $step2 || $step3 || $step4 ) {
@@ -23,7 +23,7 @@
 
 	$headers = "MIME-Version: 1.0\r\n";
 	$headers .= "Content-type: text/html; charset=UTF-8\r\n";
-	$headers .= "From: no-reply@dance-school.kiev.ua.com"; // Заменить домен на домен клиента
+	$headers .= "From: no-reply@dance-school.kiev.ua"; // Заменить домен на домен клиента
 
 	if (!$title && !$phonenum) {
 	} else {
